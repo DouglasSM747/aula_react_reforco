@@ -1,0 +1,26 @@
+/* src/styles/global.css */
+
+/* Definindo a fonte padrão para toda a aplicação */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Resetando margens e preenchimentos padrões para elementos */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Definindo cor de fundo global */
+body {
+  background-color: #f4f4f4;
+}
