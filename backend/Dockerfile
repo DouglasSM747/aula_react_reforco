@@ -6,7 +6,6 @@ COPY package.json ./
 COPY tsconfig.json ./
 
 COPY src ./src
-RUN ls -a
 RUN npm install
 RUN npm install -g ts-node
 RUN npm i -D typescript ts-node @types/node @types/express

@@ -17,4 +17,3 @@ ENTRYPOINT ["/entrypoint.sh"]
 COPY . . 
 
 CMD ["npm", "run", "dev"]
-

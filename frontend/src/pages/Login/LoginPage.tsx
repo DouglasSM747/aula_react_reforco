@@ -33,7 +33,7 @@ export default function Login() {
     <Container>
       <StyledForm onSubmit={handleLogin}>
         <div>
-          <StyledLabel>Username:</StyledLabel>
+          <StyledLabel>Email:</StyledLabel>
           <Input
             type="text"
             id="username"
