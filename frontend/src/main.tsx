@@ -11,7 +11,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        
         <Route element={<Layout />}>
           <Route path="/products" element={<Products />} />
         </Route>

@@ -23,6 +23,7 @@ export default function Login() {
       const user: User = await doLogin(username, password);
 
       navigate("/products", { state: { user: user } });
+
       sessionStorage.setItem("isAdmin", user.isAdmin ? "true" : "false");
     } catch (error) {
       console.log(error);

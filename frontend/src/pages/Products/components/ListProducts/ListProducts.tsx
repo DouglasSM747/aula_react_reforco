@@ -9,18 +9,26 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 export default function ListProducts({
   user,
   data,
+  onClickRemove,
+  onClickEdit,
 }: {
   user: User;
   data: Product[];
+  onClickRemove: (product: Product) => void;
+  onClickEdit: (Product: Product) => void;
 }) {
   if (user.isAdmin) {
     const labels = ["Nome", "Estoque", "Preço", "Ações"];
     const accessors = ["nome", "estoque", "preco", "actions"];
 
-    const renderActions = () => (
+    const renderActions = (product: Product) => (
       <Row>
-        <Button $width="60px">Remover</Button>
-        <Button $width="60px">Editar</Button>
+        <Button onClick={() => onClickRemove(product)} $width="60px">
+          Remover
+        </Button>
+        <Button onClick={() => onClickEdit(product)} $width="60px">
+          Editar
+        </Button>
       </Row>
     );
 

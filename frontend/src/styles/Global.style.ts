@@ -4,7 +4,7 @@ export const Container = styled.div<{ $width?: string }>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: ${(props) => props.$width ? props.$width : '100%'};
+  width: ${(props) => (props.$width ? props.$width : "100%")};
   justify-content: center;
   height: 100vh;
 `;
@@ -25,7 +25,7 @@ export const Input = styled.input`
 export const Button = styled.button<{ $enabled?: boolean; $width?: string }>`
   background-color: #4caf50;
   color: white;
-  width: ${(props) => props.$width ? props.$width : '100%'};
+  width: ${(props) => (props.$width ? props.$width : "100%")};
   padding: 10px 20px;
   border: none;
   margin-top: 10px;
